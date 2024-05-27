@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel de imagem</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<div class="container">
+    <div id="carousel-exemplo" class="carousel carousel-fade slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/02/08/18/36/tawny-owl-7777285_1280.jpg"  />
+                <div class="carousel-caption">
+                    <h2>Foto de uma coruja</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item"> 
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2022/11/17/08/47/brown-bear-7597616_1280.jpg"  />
+                <div class="carousel-caption">
+                    <h2>Foto de um urso</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="https://media.istockphoto.com/id/2026058934/pt/foto/a-very-rare-brown-labrador-sits-on-a-walking-path-and-poses-for-a-photographer.webp?s=2048x2048&w=is&k=20&c=XtGWs_0mtLHv3bbRJYsZamlbsLyhcdW58wIie1lQGWU="  />
+                <div class="carousel-caption">
+                    <h2>Foto de um cachorro</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-exemplo"  data-bs-slide="prev"  class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo"  data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0" ></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1" ></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2" ></button>
+        </div>
+    </div>
+</div>
+<section>
+    <h1>Bootstrap -  cards</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3 col-md-2">
+                <div class="card">
+                    <div class="card-header">
+                        cabeçalho do header
+                    </div>
+                    <img src="https://via.placeholder.com/100x100" />
+                    <div class="card-body">
+                        <h4 class="card-title">Titulo do card</h4>
+                        <h5 class="card-subititle">Subtitulo do card</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum cum amet minus! Ea dolorum asperiores, repellendus repellat soluta minus officiis iure eum similique distinctio, libero, commodi accusamus vel sunt recusandae.
+                        </p>
+                        <a href="#" class="btn btn-primary">botão link</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-3 col-md-2">
+                <div class="card">
+                    <div class="card-header">
+                        cabeçalho do header
+                    </div>
+                    <img src="https://via.placeholder.com/100x100" />
+                    <div class="cards-body">
+                        <h4 class="card-title">Titulo do card</h4>
+                        <h5 class="card-subititle">Subtitulo do card</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum cum amet minus! Ea dolorum asperiores, repellendus repellat soluta minus officiis iure eum similique distinctio, libero, commodi accusamus vel sunt recusandae.
+                        </p>
+                        <a href="#" class="btn btn-primary">botão link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        cabeçalho do header
+                    </div>
+                    <img src="https://via.placeholder.com/100x100" />
+                    <div class="card-body">
+                        <h4 class="card-title">Titulo do card</h4>
+                        <h5 class="card-subititle">Subtitulo do card</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum cum amet minus! Ea dolorum asperiores, repellendus repellat soluta minus officiis iure eum similique distinctio, libero, commodi accusamus vel sunt recusandae.
+                        </p>
+                        <a href="#" class="btn btn-primary">botão link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
